@@ -19,11 +19,23 @@ print("Hello world")
 
 ############ 2 ################
 
-def find_min(mass):
-   elem_min = mass[0]
-   for elem in mass:
-       if elem < elem_min:
-           elem_min = elem
-   return elem_min
-mass = [int(s) for s in input().split()]
-print(find_min(mass))
+# def find_min(mass):
+#    elem_min = mass[0]
+#    for elem in mass:
+#        if elem < elem_min:
+#            elem_min = elem
+#    return elem_min
+# mass = [int(s) for s in input().split()]
+# print(find_min(mass))
+
+################## 3 #################
+
+def count_primes(lst):
+    def is_prime(n):
+    if n < 2:
+return False
+for i in range(2, int(n**0.5) + 1):
+    if n % i == 0:
+    return False
+return True
+
