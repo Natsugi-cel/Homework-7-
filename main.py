@@ -30,13 +30,21 @@ print("Hello world")
 
 ################## 3 #################
 
-def count_primes(lst):
-    def is_prime(n):
-    if n < 2:
-return False
-for i in range(2, int(n**0.5) + 1):
-    if n % i == 0:
-    return False
-return True
+# def count_primes(lst):
+#     def is_prime(n):
+#     if n < 2:
+# return False
+# for i in range(2, int(n**0.5) + 1):
+#     if n % i == 0:
+#     return False
+# return True
 
 ############# 4 ############
+
+def delete_number(list, number):
+   count = 0
+   for i in list:
+       if i == number:
+           list.remove(i)
+           count += 1
+   return count
