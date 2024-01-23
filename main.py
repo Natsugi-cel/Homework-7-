@@ -41,12 +41,20 @@ print("Hello world")
 
 ############# 4 ############
 
-def delete_number(list, number):
-   count = 0
-   for i in list:
-       if i == number:
-           list.remove(i)
-           count += 1
-   return count
+# def delete_number(list, number):
+#    count = 0
+#    for i in list:
+#        if i == number:
+#            list.remove(i)
+#            count += 1
+#    return count
 
 ############## 5 #############
+
+def combine_lists(list1, list2):
+    combined = list1 + list2
+    return combined
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined_list = combine_lists(list1, list2)
+print(combined_list)
