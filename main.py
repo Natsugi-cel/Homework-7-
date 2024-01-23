@@ -48,3 +48,5 @@ def delete_number(list, number):
            list.remove(i)
            count += 1
    return count
+
+############## 5 #############
