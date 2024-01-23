@@ -16,3 +16,6 @@ def multiply_elements(lst):
 for element in lst:
     result *= element
     return result
+
+############ 2 ################
+
